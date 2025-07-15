@@ -4,9 +4,6 @@ import nodemailer from 'nodemailer';
 import {otpEmailTemplate} from "../templates/otpTemplate.js";
 
 
-console.log(process.env.ADMIN_EMAIL);
-console.log(process.env.ADMIN_EMAIL_PASSWORD);
-
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
